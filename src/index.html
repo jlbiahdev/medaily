@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dailyapp</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9f91a51f96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/index.css">
+</head>
+
+<body>
+    <header>
+        <div id="app-name">
+            <div>
+                <div id="logo">dailyapp</div>
+                <div class="backmiddle"></div>
+                <div class="backtop"></div>
+                <div class="backbottom"></div>
+            </div>
+        </div>
+        <div id="command-bar">
+            <div class="menus">
+                <div class="menu"><i class="fa-solid fa-bars" id="menu-icon"></i></div>
+                <div class="arrows">
+                    <div id="left-button" class="arrow"><i class="fa-solid fa-angle-left"></i></div>
+                    <div id="right-button" class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+                <div class="month changed" data-month=11>
+                    <span>month</span><i class="fa-solid fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="recalls">
+                <div class="search">
+                    <inputtype="text"name="search-text"id="search-text"placeholder="search"><i class="fa-solid
+                            fa-magnifying-glass"></i>
+                </div>
+                <div id="currentday-box">
+                    <div></div>
+                </div>
+                <div class="me">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <div class="container">
+            <div id="calendar" class="show">
+                <div class="days">
+                    <div class="dow">s</div>
+                    <div class="dow">m</div>
+                    <div class="dow">t</div>
+                    <div class="dow">w</div>
+                    <div class="dow">t</div>
+                    <div class="dow">f</div>
+                    <div class="dow">s</div>
+                </div>
+                <div class="days-container"></div><br>
+            </div>
+            <div id="list">
+            </div>
+            <div id="periods-bar"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script type="module"src="resources/js/index.js"></script>
+</body>
+<footer>
+    <div class="copyright">&copy; Cyrano Conseil 2024</div>
+    <div class="compliance">
+        <div class="compliant">accessibility: partially compliant</div>
+        <div class="legal">legal notices</div>
+    </div>
+</footer>
+
+</html>
